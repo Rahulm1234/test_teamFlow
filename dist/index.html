@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>test</title>
+  </head>
+  <body>
+    <!-- Created Header for Image -->
+    <header class="container mx-auto">
+      <nav
+        class="w-full absolute z-10 container mx-auto h-24 justify-between items-center"
+      >
+        <div
+          class="flex md:py-4 py-4 px-4 items-center md:gap-4 justify-between"
+        >
+          <!-- navMenu Left side logo and Name -->
+
+          <div
+            class="font-poppins text-white text-xl font-semibold flex flex-row items-center gap-2"
+          >
+            <img class="w-5" src="../res/left-logo.svg" alt="" />
+            <a href="#">TeamFlow</a>
+          </div>
+
+          <!-- navMenu Left side logo and Menu ends here-->
+
+          <ul class="md:flex hidden text-white">
+            <li class="mx-[10px] cursor-pointer">Product</li>
+            <li class="mx-[10px] cursor-pointer">Solution</li>
+            <li class="mx-[10px] cursor-pointer">Enterprise</li>
+            <li class="mx-[10px] cursor-pointer">Pricing</li>
+          </ul>
+
+          <!-- nevMenu Left side logo and Menu ends Here -->
+
+          <!-- login & sign up button for md and higher starts here -->
+
+          <div class="hidden md:flex px-20 gap-7 items-center">
+            <p class="md:text-white lg:text-[#757575]"><a href="">Login</a></p>
+            <p
+              class="px-4 py-2 md:px-4 md:py-2 text-nowrap bg-[#FFCC1D] hover:bg-yellow-500 hover:text-black rounded-[10px] cursor-pointer shadow-md shadow-black"
+            >
+              <a href="">Sign Up</a>
+            </p>
+          </div>
+
+          <div class="md:hidden">
+            <div class="space-y-1 rotate-180" id="hamburger">
+              <div class="w-6 h-0.5 bg-white"></div>
+              <div class="w-6 h-0.5 bg-white"></div>
+              <div class="w-6 h-0.5 bg-white"></div>
+            </div>
+
+            <ul
+              class="text-black flex flex-col justify-start bg-white gap-5 h-screen absolute z-20 p-10 items-start top-0 left-0 -translate-x-full transition-all shadow-sm shadow-black"
+              id="mobile-nav"
+            >
+              <li><a href="">Priduct</a></li>
+              <li><a href="">Solution</a></li>
+              <li><a href="">Enterprise</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Login/Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- login & sign up button for sm starts here -->
+
+        <!-- login & sign up button for sm starts here -->
+
+        <!-- login & sign up button for sm starts here -->
+      </nav>
+    </header>
+
+    <section>
+      <div
+        class="max-w-[1920px] bg-no-repeat mx-auto h-screen max-h-[1080px] w-full relative bg-white"
+        style="background-image: url(../res/Group777.svg)"
+      >
+        <!-- Navbar Ends Here -->
+
+        <!-- Hero Section Starts from here-->
+        <div
+          class="flex flex-col content-center justify-items-center mx-auto pt-32 px-10 md:items-center md:px-20 md:-pt-[68px] md:flex-row md:justify-between gap-5 z-30"
+        >
+          <div class="flex flex-col items-start md:py-8 gap-7">
+            <a
+              class="bg-[#FFFFFF] text-nowrap hover:bg-yellow-500 px-4 py-2 mt-5 rounded-[10px]"
+              href="#"
+              >&#128075; Welcome to TeamFlow</a
+            >
+            <h1
+              class="text-3xl text-white font-bold leading-[125%] sm:text-5xl md:text-[36px] md:leading-[125%]"
+            >
+              Work the way that <br />
+              works for you <br />
+            </h1>
+
+            <div class="w-10 h-1 bg-[#3ADAD9]"></div>
+
+            <p class="md:text-[22px] text-white">
+              Create, Build, Collaborate and Ship products <br />
+              very fast
+            </p>
+            <a
+              class="bg-[#FFCC1D] hover:bg-yellow-500 px-4 py-2 rounded-[10px]"
+              href="#"
+              >Get Started</a
+            >
+          </div>
+          <div class="pt-12 mx-10 flex items-center justify-center">
+            <img src="../res/grp2.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- Hero Section Ends from here-->
+      </div>
+    </section>
+
+    <!-- Header Complete for here -->
+
+    <!-- Section for Company -->
+    <section id="sec_companies">
+      <!-- Outer/Main div for 2 divs Description & Companies -->
+
+      <div
+        class="container justify-center items-center mx-auto my-10 flex flex-row gap-12 py-4 md:flex-row lg:gap-6 lg:justify-between"
+      >
+        <!-- 1st div for Description -->
+        <div class="flex flex-col py-4 px-12">
+          <div class="flex items-start w-12 h-1 bg-[#FFCC1D]"></div>
+          <p class="text-[#515151] text-2xl md:text-xl">
+            See why over 100,000 teams choose <br />
+            <a href="#">TeamFlow.com</a>
+          </p>
+        </div>
+        <!-- 1st div for Description Ends here-->
+        <!-- 2nd div for Company Images -->
+        <div
+          class="responsive flex overflow-hidden flex-col gap-6 md:flex-row lg:justify-between md:justify-center md:gap-8 lg:gap-6"
+        >
+          <img class="xl:px-28 p-8" src="../res/image 1.svg" alt="hulu" />
+          <img
+            class="xl:px-28 p-8"
+            src="../res/image 2.svg"
+            alt="BBC-Studios"
+          />
+          <img
+            class="xl:px-28 p-8"
+            src="../res/image 3.svg"
+            alt="Universal-Studios"
+          />
+          <img class="xl:px-28 p-8" src="../res/image 4.svg" alt="Adobe" />
+        </div>
+        <!-- 2nd div for Company Images Ends here-->
+      </div>
+      <!-- Outer/Main div for Companies Ends here-->
+    </section>
+    <!-- Section for Company Ends here-->
+
+    <!-- Section -->
+    <section id="sec_planning">
+      <!-- Outer/Main div for 1 header and 3 cards -->
+      <div
+        class="container mx-auto my-10 gap-4 md:items-center sr:flex sr:flex-col lg:flex lg:flex-col"
+      >
+        <!-- 1st div for Header -->
+        <div class="text-3xl flex justify-center px-4">
+          <h1 class="text-[#565656]">
+            What you <span class="text-[#FFCA1D]">can do?</span>
+          </h1>
+        </div>
+        <!-- 1st div for Header Ends here-->
+
+        <!-- 2nd Outer div for 3 Card icons and Description -->
+        <div
+          class="md:w-full mx-auto flex flex-col gap-8 mt-4 text-center md:justify-between sr:flex-row lg:flex-row"
+        >
+          <!--1st div for Card 1-->
+          <div class="flex items-center flex-col gap-4">
+            <img src="../res/graph_icon.svg" alt="Business-Planning" />
+            <h2 class="text-[#2B3377] font-semibold">Business Planning</h2>
+            <p class="text-[#565656]">
+              Our Business Plan is a written document <br />
+              describing a company’s core business <br />
+              activities.
+            </p>
+          </div>
+          <!--1st div for Card 1 Ends here-->
+
+          <!-- 2nd div for Card 2 -->
+          <div class="flex items-center flex-col gap-4">
+            <img src="../res/financial_icon.svg" alt="Financial-Planning" />
+            <h2 class="text-[#2B3377] font-semibold">Financial Planning</h2>
+            <p class="text-[#565656]">
+              Our expert team sensible decision about their <br />
+              money, to ensure they achieve the life goals. A <br />
+              financial plan.
+            </p>
+          </div>
+          <!-- 2nd div for Card 2 Ends here-->
+
+          <!-- 3rd div for Card 3 -->
+          <div class="flex items-center flex-col gap-4">
+            <img src="../res/market_icon.svg" alt="Market-Ananlysis" />
+            <h2 class="text-[#2B3377] font-semibold">Market Ananlysis</h2>
+            <p class="text-[#565656]">
+              A market analysis is a quantitative and <br />
+              qualitative assessment of a market. It looks <br />
+              into the size of the market.
+            </p>
+          </div>
+          <!-- 3rd div for Card 3 Ends here-->
+        </div>
+        <!-- 2nd Outer div for 3 Card icons and Description Ends here-->
+      </div>
+      <!-- Outer/Main div for 1 header and 3 cards Ends here-->
+    </section>
+    <!-- Section Ends here-->
+
+    <!-- Section for Feature 1 -->
+    <section id="feature_1">
+      <!-- Outer/Main div for 3 divs -->
+      <div
+        class="container mx-auto my-10 flex flex-col gap-4 md:gap-8 md:justify-around md:flex-col sr:flex-col lg:flex-col lg:justify-center"
+      >
+        <!-- 1st Div for Header -->
+        <div class="text-3xl flex justify-center">
+          <h1 class="text-[#565656]">
+            Our <span class="text-[#FFCA1D]">Feature</span>
+          </h1>
+        </div>
+        <!-- 1st Div for Header Ends here-->
+
+        <!-- 2nd Outer/Main for left side Image and right side Description -->
+        <div
+          class="flex flex-col items-center gap-4 md:gap-8 justify-center md:flex-col sr:flex-row lg:flex-row lg:justify-around"
+        >
+          <!-- 1st Div for Left side Image -->
+          <div class="p-4">
+            <img class="" src="../res/Group 32.svg" alt="manage-everything" />
+          </div>
+          <!-- 1st Div for Left side Image Ends here-->
+
+          <!-- 2nd div for Right side Description -->
+          <div
+            class="flex flex-col px-6 gap-4 justify-center items-start text-start lg:items-start lg:text-left"
+          >
+            <h1 class="text-[#4A4A4A] text-2xl">
+              Manage everything in one workspace
+            </h1>
+            <div class="flex w-12 h-1 bg-[#FFCC1D]"></div>
+            <p class="text-[#575757]">
+              Planning, tracking and delivering your team’s best work has <br />
+              never been easier. An integrated workspace that’s simple to <br />
+              use, TeamFlow lets you spend less time managing your work <br />
+              and more time actually doing it.
+            </p>
+          </div>
+          <!-- 2nd div for Right side Description Ends here-->
+        </div>
+        <!-- 2nd Outer/Main for left side Image and right side Description Ends here-->
+      </div>
+      <!-- Outer/Main div for 3 divs Ends here-->
+    </section>
+    <!-- Section for Feature 1 Ends here-->
+
+    <!-- Section for Feature 2 -->
+    <section id="feature_2">
+      <!-- Outer/Main div for 2 divs -->
+      <div
+        class="container my-10 mx-auto flex flex-col items-center gap-4 md:gap-8 justify-center md:flex-col sr:flex-row lg:flex-row lg:justify-around"
+      >
+        <!-- 1st div for Left side Description -->
+        <div
+          class="flex flex-col px-6 gap-4 justify-center md:items-start text-start lg:items-start lg:text-left"
+        >
+          <h1 class="text-2xl text-[#4A4A4A]">Set up in minutes</h1>
+          <div class="flex w-12 h-1 bg-[#FFCC1D]"></div>
+          <p class="text-[#575757]">
+            Get started fast with hundreds of visual and customizable <br />
+            templates - or create your own. Use our free online template <br />
+            maker to create beautiful template in minutes. Choose from <br />
+            hundreds of pre-made templates and tell stories with data <br />
+            with our easy drag-and-drop infographic creator.
+          </p>
+        </div>
+        <!-- 1st div for Left side Description Ends here-->
+
+        <!-- 2nd div for right side Image -->
+        <div class="">
+          <img src="../res/Group 65.svg" alt="Set-Up-in-a-minutes" />
+        </div>
+        <!-- 2nd div for right side Image Ends here-->
+      </div>
+      <!-- Outer/Main div for 2 divs Ends here-->
+    </section>
+    <!-- Section for Feature 2 Ends here-->
+
+    <!-- Section for Tools -->
+    <section id="feature_tools">
+      <!-- Outer/Main for Header , 5 divs of Images and one Button -->
+      <div class="container mx-auto my-10 gap-8">
+        <!-- 1st div for Header Section -->
+        <div class="flex flex-col text-center px-6">
+          <h1 class="text-2xl text-[#575757]">
+            <span class="text-[#FFCC1D]">Integrate</span> with your existing
+            tools <br />
+            in a few clicks
+          </h1>
+        </div>
+        <!-- 1st div for Header Section Ends here-->
+
+        <!--2nd div for 5 Image divs -->
+        <div
+          class="flex flex-col px-4 py-4 items-center justify-evenly gap-8 sr:flex-row lg:flex-row"
+        >
+          <div><img src="../res/image 21.svg" alt="zoom" /></div>
+          <div><img src="../res/image 19.svg" alt="Adobe-Creativity" /></div>
+          <div><img src="../res/image 16.svg" alt="image" /></div>
+          <div><img src="../res/image 15.svg" alt="Drop-box" /></div>
+          <div><img src="../res/image 17.svg" alt="Google-Drive" /></div>
+        </div>
+        <!--2nd div for 5 Image divs Ends here-->
+
+        <!-- 3rd div for Button -->
+        <div class="flex items-center justify-center">
+          <a class="bg-[#FFCC1D] hover:bg-yellow-500 px-4 py-2" href="#"
+            >View All</a
+          >
+        </div>
+        <!-- 3rd div for Button Ends here-->
+      </div>
+      <!-- Outer/Main for Header , 5 divs of Images and one Button Ends here-->
+    </section>
+    <!-- Section for Tools Ends here-->
+
+    <!-- Section for feature 4 -->
+    <section id="feature_4">
+      <!-- Outer/Main div for 2 div Left side Images and Right side Descrption -->
+      <div
+        class="container my-10 mx-auto flex flex-col items-center gap-4 md:gap-8 justify-center md:flex-col sr:flex-row lg:flex-row lg:justify-around"
+      >
+        <!-- 1st div for Left side Image -->
+        <div class="">
+          <img src="../res/Mask Group.svg" alt="Save time with Automation" />
+        </div>
+        <!-- 1st div for Left side Image Ends here-->
+
+        <!-- 2nd div for right side Description -->
+        <div
+          class="flex flex-col px-6 gap-4 justify-center items-center text-center sr:items-start sr:text-start lg:items-start lg:text-left"
+        >
+          <h1 class="text-2xl text-[#4A4A4A]">Save time with Automations</h1>
+          <div class="flex w-12 h-1 bg-[#FFCC1D]"></div>
+          <p class="text-[#575757]">
+            Automate the repetitive work in seconds so you can avoid <br />
+            human error and focus on what matters. It gives the <br />
+            impression of software that its highly automated which <br />
+            implies that it is good for client for who want to save time and
+            <br />
+            manage team members easily.
+          </p>
+        </div>
+        <!-- 2nd div for right side Description Ends here-->
+      </div>
+      <!-- Outer/Main div for 2 div Left side Images and Right side Descrption Ends here-->
+    </section>
+    <!-- Section for feature 4 Ends here-->
+
+    <!-- Section for Feature 5 -->
+    <section id="feature_5">
+      <!-- Outer/Main div for 2 div Left side Description and Right side Image -->
+      <div
+        class="container my-10 mx-auto flex flex-col items-center gap-4 md:gap-8 justify-center md:flex-col sr:flex-row lg:flex-row lg:justify-around"
+      >
+        <!-- 1st div for left side Description -->
+        <div
+          class="flex flex-col px-6 gap-4 justify-center items-center text-center sr:items-start sr:text-start lg:items-start lg:text-left"
+        >
+          <h1 class="text-2xl text-[#4A4A4A]">Visualize work with Views</h1>
+          <div class="flex w-12 h-1 bg-[#686DF1]"></div>
+          <p class="text-[#575757]">
+            View data as a map, calendar, timeline, kanban, and more <br />
+            The easy-to-use, visual interface lets any team member <br />
+            jump in and get started, no training required.
+          </p>
+        </div>
+        <!-- 1st div for left side Description Ends here-->
+
+        <!-- 2nd div for right side Image -->
+        <div>
+          <img src="../res/Group 71.svg" alt="Visualize-work-with-views" />
+        </div>
+        <!-- 2nd div for right side Image Ends here-->
+      </div>
+      <!-- Outer/Main div for 2 div Left side Description and Right side Image Ends here-->
+    </section>
+    <!-- Section for Feature 5 Ends here-->
+
+    <!-- Section for Feature 6 -->
+    <section id="feature_6">
+      <!-- Outer/Main div for 2 divs left side Image and right side Description -->
+      <div
+        class="container my-10 mx-auto flex flex-col items-center gap-4 md:gap-8 justify-center md:flex-col sr:flex-row lg:flex-row lg:justify-around"
+      >
+        <!-- 1st div for Image -->
+        <div>
+          <img src="../res/Group 76.svg" alt="24/7-Customer-Support" />
+        </div>
+        <!-- 1st div for Image Ends here-->
+
+        <!-- 2nd div Right side Description -->
+        <div
+          class="flex flex-col px-6 gap-4 justify-center items-center text-center sr:items-start sr:text-start lg:items-start lg:text-left"
+        >
+          <h1 class="text-2xl text-[#4A4A4A]">24/7 Customer Support</h1>
+          <div class="flex w-12 h-1 bg-[#FFCC1D]"></div>
+          <p class="text-[#575757]">
+            Our team is here to give you personalized support within the <br />
+            hour available 24/7. In accordance with our commitment to <br />
+            providing superior and professional service. Join daily live <br />
+            webinars, watch our tutorials, or browse through our knowledge base.
+          </p>
+          <a class="bg-[#FFCC1D] hover:bg-yellow-500 px-4 py-2" href="#"
+            >View All</a
+          >
+        </div>
+        <!-- 2nd div Right side Description Ends here-->
+      </div>
+      <!-- Outer/Main div for 2 divs left side Image and right side Description Ends here-->
+    </section>
+    <!-- Section for Feature 6 Ends here-->
+
+    <!-- Section for Client Testimonial -->
+    <section id="client_testimonial">
+      <!-- Outer/Main div for 2 div Header and Image -->
+      <div class="container my-10 mx-auto">
+        <!-- 1st div for Header -->
+        <div
+          class="text-3xl mb-14 flex items-center text-center justify-center"
+        >
+          <h1 class="text-[#2D2D2D]">
+            Client <br />
+            <span class="text-[#FFCC1D]">Testimonial</span>
+          </h1>
+        </div>
+        <!-- 1st div for Header Ends here-->
+
+        <!-- 2nd div for Image -->
+        <div>
+          <img src="../res/Group 4809.svg" alt="client-testimonial" />
+        </div>
+        <!-- 2nd div for Image Ends here-->
+      </div>
+      <!-- Outer/Main div for 2 div Header and Image Ends here-->
+    </section>
+    <!-- Section for Client Testimonial Ends here-->
+
+    <!-- Section for NewsLetter -->
+    <section id="newsletter">
+      <!-- Outer/Main div for Header and input,button -->
+      <div class="flex flex-col gap-5 py-8">
+        <!-- 1st div for Header -->
+        <div
+          class="text-2xl mb-14 flex flex-col gap-5 items-center text-center justify-center"
+        >
+          <p class="text-[#EB801D]">Support</p>
+          <h1 class="text-[#2D3150] font-semibold">
+            Subscribe Newsletter & get
+          </h1>
+          <h1 class="text-[#2D3150]">Company News</h1>
+        </div>
+        <!-- 1st div for Header Ends here-->
+
+        <!-- 2nd div for input and button -->
+        <!-- <div
+          class="w-auto rounded-[10px] mx-auto flex flex-row justify-center items-center bg-white"
+        >
+          <input
+            class="bg-[#FAFAFF] rounded-[10px] focus-within:outline-0 md:py-2 md:px-4"
+            type="email"
+            name="email"
+            placeholder="Type Your Email Here"
+          />
+          <button
+            class="py-2 px-2 bg-[#686DF1] text-white uppercase md:text-lg md:py-[5px] md:px-[20px] rounded-lg"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </div> -->
+        <!-- 2nd div for input and button Ends here-->
+      </div>
+      <!-- Outer/Main div for Header and input,button Ends here-->
+    </section>
+    <!-- Section for NewsLetter Ends here-->
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <!-- Outer/Main div for 2 divs left sid information and right side quick links -->
+      <div
+        class="container mx-auto my-10 flex flex-col gap-8 sr:flex-row lg:flex-row lg:justify-between"
+      >
+        <!--1st Outer/Main div for Address and logo -->
+        <div class="flex flex-col gap-6 px-6">
+          <!-- 1st div for logo -->
+          <div class="flex flex-row gap-3 items-center">
+            <img src="../res/Group 4877.svg" alt="TeamFlow Logo" />
+            <a class="text-2xl" href="#"
+              ><span class="text-[#5565F0]">Team</span
+              ><span class="text-[#D77F3F]">Flow</span></a
+            >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-base text-[#5C5E87]">
+              All Rights reserved © teamflow.com
+            </p>
+          </div>
+          <!-- 1st div for logo Ends here-->
+
+          <!-- 2nd div for Address -->
+          <div class="flex flex-col gap-3">
+            <h1 class="font-semibold text-[#2B3377]">Address</h1>
+            <p class="text-[#5C5E87]">26 W 12th St. New York, NY 10342, NYC</p>
+          </div>
+          <!-- 2nd div for Address Ends here-->
+
+          <!-- 3rd div for  Social Medial Handles -->
+          <div class="">
+            <h1 class="font-semibold text-[#2B3377]">Social Media</h1>
+            <!-- UL for Social media handles/Icons -->
+            <ul class="flex flex-row gap-5 my-2">
+              <li>
+                <a href="#"
+                  ><img src="../res/fb-logo.svg" alt="Facbook-logo"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../res/insta-logo.svg" alt="Instagram-logo"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../res/twitter-logo.svg" alt="Twitter-logo"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../res/YT-logo.svg" alt="Youtube-logo"
+                /></a>
+              </li>
+            </ul>
+            <!-- UL for Social media handles/Icons Ends here-->
+          </div>
+          <!-- 3rd div for  Social Medial Handles Ends here-->
+        </div>
+        <!--1st Outer/Main div for Address and logo Ends here-->
+
+        <!-- 2nd Outer/div for Quick links -->
+        <div class="flex flex-col md:flex-row gap-10 px-6 lg:gap-20 2xl:gap-32">
+          <!-- 1st div for Product regarding Quick links -->
+          <div class="flex flex-col gap-5">
+            <h1 class="font-semibold text-[#2B3377]">Product</h1>
+            <ul class="flex flex-col gap-3 text-[#5C5E87]">
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Enterprice</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Affiliate</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Work OS</a></li>
+            </ul>
+          </div>
+          <!-- 1st div for Product regarding Quick links Ends here-->
+
+          <!-- 2nd div for Team regarding Quick links -->
+          <div class="flex flex-col gap-5">
+            <h1 class="font-semibold text-[#2B3377]">Team</h1>
+            <ul class="flex flex-col gap-3 text-[#5C4E87]">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Find a Partner</a></li>
+              <li><a href="#">In the News</a></li>
+            </ul>
+          </div>
+          <!-- 2nd div for Team regarding Quick links Ends here-->
+
+          <!-- 3rd div for Solutions regarding Quick links -->
+          <div class="flex flex-col gap-5">
+            <h1 class="font-semibold text-[#2B3377]">Solutions</h1>
+            <ul class="flex flex-col gap-3 text-[#5C4E87]">
+              <li><a href="#">Project Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">CRM and Sales</a></li>
+              <li><a href="#">Software Development</a></li>
+              <li><a href="#">Constructions</a></li>
+              <li><a href="#">Creative Production</a></li>
+              <li><a href="#">Remote Work</a></li>
+              <li><a href="#">HR</a></li>
+              <li><a href="#">IT</a></li>
+              <li><a href="#">See More Solutions</a></li>
+            </ul>
+          </div>
+          <!-- 3rd div for Solutions regarding Quick links Ends here-->
+
+          <!-- 4th div for resources regarding Quick links -->
+          <div class="flex flex-col gap-5">
+            <h1 class="font-semibold text-[#2B3377]">resources</h1>
+            <ul class="flex flex-col gap-3 text-[#5C4E87]">
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Daily Webinars</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">Profesionals Services</a></li>
+              <li><a href="#">Video Tutorials</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Podcast</a></li>
+            </ul>
+          </div>
+          <!-- 4th div for resources regarding Quick links ends here-->
+        </div>
+        <!-- 2nd Outer/div for Quick links Ends here-->
+      </div>
+      <!-- Outer/Main div for 2 divs left sid information and right side quick links Ends here-->
+    </footer>
+    <!-- Footer Section Ends here-->
+
+    <!-- Scripting -->
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
+      integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./slickCarousel.js"></script> -->
+
+    <script>
+      $(".responsive").slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        nav: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+
+    <script>
+      let hamburger = document.getElementById("hamburger");
+      let mobileNav = document.getElementById("mobile-nav");
+      console.log(hamburger);
+
+      hamburger.addEventListener("click", () => {
+        mobileNav.classList.toggle("-translate-x-full");
+      });
+      console.log(hamburger);
+      console.log(mobileNav);
+    </script>
+    <!-- Scripting Ends here -->
+  </body>
+</html>

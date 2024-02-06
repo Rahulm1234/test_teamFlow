@@ -1,0 +1,11 @@
+				Screen Ratio for Responsive Webs
+(Screen Zoom in Zoom out)
+
+25% - 125% : 2XL(Large Moniter/Desktop)
+125% - 150% : XL(Moniter/Desktop)
+150% - 175% : LG(Laptop Screen)
+175% - 200% : MD(Tablets)
+200% - 300% : SM(Phones & Tablets)
+300% - 500% : SM>__(Lower than SM)(Phones)
+
+
