@@ -139,7 +139,7 @@
               very fast
             </p>
             <a
-              class="bg-[#FFCC1D] hover:bg-transparent hover:text-white duration-300 hover:border border border-transparent inline-block hover:bg-yellow-500 px-4 py-2 rounded-[10px]"
+              class="bg-[#FFCC1D] hover:bg-transparent hover:text-white duration-300 hover:border border border-transparent inline-block px-4 py-2 rounded-[10px]"
               href="#"
               >Get Started</a
             >
@@ -175,19 +175,23 @@
         <div
           class="responsive max-w-full flex overflow-hidden flex-col gap-6 md:flex-row lg:justify-between md:justify-center md:gap-8 lg:gap-6"
         >
-          <img class="xl:px-28 h-40 w-40" src="../res/image 1.svg" alt="hulu" />
           <img
-            class="xl:px-28 h-40 w-40"
+            class="lg:px-8 max-h-48 h-40 w-40"
+            src="../res/image 1.svg"
+            alt="hulu"
+          />
+          <img
+            class="lg:px-8 max-h-48 h-40 w-40"
             src="../res/image 2.svg"
             alt="BBC-Studios"
           />
           <img
-            class="xl:px-28 h-40 w-40"
+            class="lg:px-8 max-h-48 h-40 w-40"
             src="../res/image 3.svg"
             alt="Universal-Studios"
           />
           <img
-            class="xl:px-28 h-40 w-40"
+            class="lg:px-8 max-h-48 h-40 w-40"
             src="../res/image 4.svg"
             alt="Adobe"
           />
@@ -536,8 +540,24 @@
         <!-- 1st div for Header Ends here-->
 
         <!-- 2nd div for Image -->
-        <div>
-          <img src="../res/Group 4809.svg" alt="client-testimonial" />
+        <div class="relative">
+          <img src="../res/Group 5.svg" alt="client-testimonial" />
+          <!--   left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[45%] lg:top-[41%] xl:top-[39%] 2xl:top-[36%] md:left-[52%] lg:left-[53%] -->
+          <div
+            class="absolute max-w-sm top-[29%] left-[30%] sm:left-[33%] md:left-[36%] lg:left-[41%] xl:left-[43%] 2xl:left-[44%] overflow-hidden rounded-lg bg-white shadow-md"
+          >
+            <div class="py-3 flex flex-col px-3 text-center">
+              <div>
+                <p class="text-xl text-[#2D3150]">Rocky Dixon</p>
+              </div>
+              <div>
+                <p class="text-xs text-nowrap mt-2 text-gray-700">
+                  "The features on monday.com make our <br />
+                  team work faster and easier to organize."
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- 2nd div for Image Ends here-->
       </div>
